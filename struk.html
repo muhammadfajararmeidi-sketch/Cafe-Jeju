@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Struk Cafe Jeju</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🧾 Struk Pembelian</h1>
+
+<div id="struk"></div>
+
+<h2>Terima Kasih ☕</h2>
+
+<a href="menu.html">Pesan Lagi</a>
+
+<script>
+
+let data = JSON.parse(localStorage.getItem("struk")) || [];
+let div=document.getElementById("struk");
+
+let total=0;
+
+data.forEach(i=>{
+total += i.harga*i.qty;
+
+div.innerHTML+=`
+<p>${i.nama} x ${i.qty} = Rp ${i.harga*i.qty}</p>
+`;
+});
+
+div.innerHTML+=`<h3>Total: Rp ${total}</h3>`;
+
+</script>
+
+</body>
+</html>

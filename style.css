@@ -1,0 +1,92 @@
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f6f3ee;
+}
+
+/* ===== LANDING PAGE ===== */
+
+.landing{
+background-image:
+linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url("https://images.unsplash.com/photo-1528164344705-47542687000d");
+background-size:cover;
+background-position:center;
+height:100vh;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.overlay h1{
+font-size:55px;
+}
+
+.btn-main{
+padding:15px 30px;
+background:#2c5f2d;
+border:none;
+color:white;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+}
+
+/* ===== AREA MENU BACKGROUND ===== */
+
+.menu-area{
+background-image:
+linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),
+url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5");
+background-size:cover;
+padding:40px 0;
+}
+
+/* ===== CATEGORY TITLE ===== */
+
+.kategori{
+text-align:center;
+font-size:28px;
+margin:40px 0 10px;
+color:#2c5f2d;
+}
+
+/* ===== MENU CARD ===== */
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.card{
+background:white;
+width:220px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:150px;
+object-fit:cover;
+}
+
+button{
+margin:10px;
+padding:10px;
+border:none;
+background:#2c5f2d;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}

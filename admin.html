@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Cafe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>📋 Data Pesanan</h1>
+
+<div id="admin"></div>
+
+<script>
+
+let orders = JSON.parse(localStorage.getItem("orders")) || [];
+let div=document.getElementById("admin");
+
+orders.forEach((o,index)=>{
+
+div.innerHTML+=`<h3>Order ${index+1}</h3>`;
+
+o.items.forEach(i=>{
+div.innerHTML+=`<p>${i.nama} (${i.qty})</p>`;
+});
+
+div.innerHTML+=`<hr>`;
+});
+
+</script>
+
+</body>
+</html>
